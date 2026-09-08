@@ -12,7 +12,7 @@ def readImage():
     root = os.getcwd()
 
     # get the local image path and join it with the root directory os.path.join
-    getImagPath = os.path.join(root, '..\\storage\\images\\lampbg.png')
+    getImagPath = os.path.join(root, '.\\storage\\images\\lampbg.png')
 
     # use cv to read the merged image path and store it in the variable called img
     img = cv.imread(getImagPath)

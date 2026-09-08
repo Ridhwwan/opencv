@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # read an image
 def readImage():
     root = os.getcwd()
-    imgPath = os.path.join(root,'storage\\images\\lampbg.png')
+    imgPath = os.path.join(root,'..\\storage\\images\\lampbg.png')
     img = cv.imread(imgPath)
     debug = 1
     cv.imshow ('img', img)
@@ -17,9 +17,10 @@ def readImage():
 # write an image
 def writeImage():
     root = os.getcwd()
-    imgPath = os.path.join(root,'storage\\images\\lampbg.png')
+    imgPath = os.path.join(root,'.\\storage\\images\\lampbg.png')
     img = cv.imread(imgPath)
-    outPath = os.path.join(root,'storage\\lampbgoutput.png')
+    outPath = os.path.join(root,'.\\storage\\images\\lampbgoutput.png')
+
     # if image with the same name exists, it will be overwritten
     cv.imwrite(outPath, img)
 
